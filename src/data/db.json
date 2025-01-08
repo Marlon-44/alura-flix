@@ -1,0 +1,92 @@
+{
+  "videos": [
+    {
+      "titulo": "Introducción a JavaScript",
+      "categoria": "FRONT END",
+      "url_imagen": "https://i.ytimg.com/vi/b71kWley8-o/maxresdefault.jpg",
+      "url_video": "https://www.youtube.com/watch?v=abc123",
+      "descripcion": "Aprende las bases de JavaScript, uno de los lenguajes más populares para el desarrollo web.",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "titulo": "CSS avanzado: Animaciones y transiciones",
+      "categoria": "FRONT END",
+      "url_imagen": "https://i.ytimg.com/vi/pT7gTc4pwnw/maxresdefault.jpg",
+      "url_video": "https://www.youtube.com/watch?v=def456",
+      "descripcion": "Explora cómo crear experiencias visuales dinámicas con animaciones y transiciones en CSS."
+    },
+    {
+      "id": "3",
+      "titulo": "React: Componentes y Hooks",
+      "categoria": "FRONT END",
+      "url_imagen": "https://i.ytimg.com/vi/pT7gTc4pwnw/maxresdefault.jpg",
+      "url_video": "https://www.youtube.com/watch?v=ghi789",
+      "descripcion": "Aprende cómo estructurar aplicaciones React utilizando componentes y hooks para un desarrollo más eficiente."
+    },
+    {
+      "titulo": "Crea una API REST con Node.js",
+      "categoria": "BACK END",
+      "url_imagen": "https://i.ytimg.com/vi/-LmFK6skG7s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAnIViTpxVq8jZ0YmbVBmn5WdB0Zg",
+      "url_video": "https://www.youtube.com/watch?v=jkl012",
+      "descripcion": "Guía práctica para crear una API RESTful utilizando Node.js y Express.",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "titulo": "Base de datos relacionales con MySQL",
+      "categoria": "BACK END",
+      "url_imagen": "https://i.ytimg.com/vi/-LmFK6skG7s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAnIViTpxVq8jZ0YmbVBmn5WdB0Zg",
+      "url_video": "https://www.youtube.com/watch?v=mno345",
+      "descripcion": "Aprende a diseñar y gestionar bases de datos utilizando MySQL, un estándar en la industria."
+    },
+    {
+      "id": "6",
+      "titulo": "Autenticación con JWT en aplicaciones Node.js",
+      "categoria": "BACK END",
+      "url_imagen": "https://i.ytimg.com/vi/-LmFK6skG7s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAnIViTpxVq8jZ0YmbVBmn5WdB0Zg",
+      "url_video": "https://www.youtube.com/watch?v=pqr678",
+      "descripcion": "Implementa autenticación segura con JSON Web Tokens (JWT) en tus proyectos de Node.js."
+    },
+    {
+      "id": "7",
+      "titulo": "Diseño UX/UI para aplicaciones móviles",
+      "categoria": "INNOVACION Y GESTION",
+      "url_imagen": "https://i.ytimg.com/vi/UuAX5azcvDQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBv35TL2JpK7AdWOdaO3y-W5LdKwA",
+      "url_video": "https://www.youtube.com/watch?v=stu901",
+      "descripcion": "Consejos y técnicas para mejorar la experiencia de usuario en aplicaciones móviles."
+    },
+    {
+      "id": "8",
+      "titulo": "Cómo gestionar proyectos de desarrollo ágilmente",
+      "categoria": "INNOVACION Y GESTION",
+      "url_imagen": "https://i.ytimg.com/vi/UuAX5azcvDQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBv35TL2JpK7AdWOdaO3y-W5LdKwA",
+      "url_video": "https://www.youtube.com/watch?v=vwx234",
+      "descripcion": "Descubre las mejores prácticas para liderar proyectos bajo metodologías ágiles como Scrum y Kanban."
+    },
+    {
+      "id": "9",
+      "titulo": "Gestión del tiempo en equipos remotos",
+      "categoria": "INNOVACION Y GESTION",
+      "url_imagen": "https://i.ytimg.com/vi/UuAX5azcvDQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBv35TL2JpK7AdWOdaO3y-W5LdKwA",
+      "url_video": "https://www.youtube.com/watch?v=yz1234",
+      "descripcion": "Descubre estrategias para mantener la productividad en equipos que trabajan de forma remota."
+    },
+    {
+      "id": "62c7",
+      "titulo": "Base de datos No relacionales con MySQL",
+      "categoria": "BACK END",
+      "url_imagen": "https://i.ytimg.com/vi/-LmFK6skG7s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAnIViTpxVq8jZ0YmbVBmn5WdB0Zg",
+      "url_video": "https://www.youtube.com/watch?v=mno345",
+      "descripcion": "Aprende a diseñar y gestionar bases de datos No Relacionales utilizando MySQL, un estándar en la industria."
+    },
+    {
+      "id": "ce84",
+      "titulo": "JavaScript Medio",
+      "categoria": "FRONT END",
+      "url_imagen": "https://i.ytimg.com/vi/pT7gTc4pwnw/maxresdefault.jpg",
+      "url_video": "https://www.youtube.com/watch?v=abc123",
+      "descripcion": "Aprende conceptos un poco mas avanzados de javascript, uno de los lenguajes más populares para el desarrollo web."
+    }
+  ]
+}

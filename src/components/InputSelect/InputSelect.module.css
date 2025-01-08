@@ -1,0 +1,33 @@
+.input__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 300px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    flex:1 1 0;
+}
+
+.input__container label{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.input{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.input option{
+    background-color: #262626;
+}
+
+@media (max-width: 480px) {
+    .input option{
+    font-size: 16px;
+    }
+}

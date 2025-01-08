@@ -1,0 +1,17 @@
+p,h1{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecera{
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    padding-top: 50px;
+
+}
+.cabecera h1{
+    font-size: 40px;
+    font-weight: 1000;
+    padding-bottom: 20px;
+}

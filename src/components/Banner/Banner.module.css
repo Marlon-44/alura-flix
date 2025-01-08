@@ -1,0 +1,44 @@
+.banner{
+    width: 100vw;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.banner section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    padding: 0 30px;
+    
+}
+
+/* Banner.module.css */
+
+
+.bannerImage {
+    display: flex;
+    max-width: 100%; /* Ajusta la imagen al contenedor */
+    min-height: 300px; /* Mantiene la proporción de la imagen */
+    border-radius: 15px; /* Borde redondeado de la imagen */
+    box-shadow: inset 0 0 20px 5px #6BD1FF;  /* Borde redondeado de la imagen */
+    background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+    .bannerImage{
+        min-height: 150px;
+    }
+    .banner{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner{
+        display: none;
+    }
+}

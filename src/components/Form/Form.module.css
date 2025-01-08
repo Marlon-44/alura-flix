@@ -1,0 +1,9 @@
+.register__form__container form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+

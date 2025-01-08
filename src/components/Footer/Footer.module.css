@@ -1,0 +1,23 @@
+.homeBtn__container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color: #2271d14e;
+    border: 3px solid #2271d1 ;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.newBtn__container{
+    display: inline-block;
+}
+
+    @media screen and (min-width: 480px) {
+        .homeBtn__container{
+            display: none;
+        }
+        .newBtn__container{
+            display: none;
+        }
+    }
