@@ -46,7 +46,6 @@ export async function deleteVideo(id) {
         if (!response.ok){
             throw new Error('Error al eliminar el video')
         }
-        alert('Video Eliminado Correctamente')
         console.log('Video eliminado');
         return true
 
