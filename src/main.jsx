@@ -4,14 +4,17 @@ import './index.css'
 import AppRoutes from './routes.jsx'
 import { CategoryProvider } from './context/categoryContext.jsx'
 import { VideosProvider } from './context/videosContext.jsx'
+import { BtnSubmitProvider } from './context/btnSubmitContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CategoryProvider>
-      <VideosProvider>
-        <AppRoutes>
-        </AppRoutes>
-      </VideosProvider>
-    </CategoryProvider>
+    <BtnSubmitProvider>
+      <CategoryProvider>
+        <VideosProvider>
+          <AppRoutes>
+          </AppRoutes>
+        </VideosProvider>
+      </CategoryProvider>
+    </BtnSubmitProvider>
   </StrictMode>,
 )

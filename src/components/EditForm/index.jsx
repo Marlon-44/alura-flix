@@ -7,6 +7,7 @@ import Button from '../Button'
 import { useContext, useState } from 'react'
 import { VideosContext } from '../../context/videosContext'
 import { updateVideo } from '../../ConexionApi/conexionApi'
+import { BtnSubmitContext } from '../../context/btnSubmitContext'
 const FormTitle = styled.h3`
     color: #2271D1;
     font-size: 36px;
@@ -20,6 +21,7 @@ const LongInputs = styled.div`
     gap: 20px;
     flex-direction: column;
     width: 100%;
+    box-sizing: border-box;
 `
 const ShortInputs = styled.div`
     display: flex;
@@ -30,6 +32,12 @@ const ShortInputs = styled.div`
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    @media (max-width: 480px) {
+    
+        
+        justify-content: center;
+        align-items: center;
+        }
     
 `
 const ButtonSection = styled.div`
@@ -48,7 +56,7 @@ const ButtonSection = styled.div`
 `
 
 const EditForm = () => {
-    const { selectedVideo } = useContext(VideosContext);
+    const {selectedVideo, setSelectedVideo } = useContext(VideosContext);
     const [editFormState, setEditFormState] = useState({
         "titulo": selectedVideo.titulo,
         "categoria": selectedVideo.categoria,
@@ -56,6 +64,9 @@ const EditForm = () => {
         "url_video": selectedVideo.url_video,
         "descripcion": selectedVideo.descripcion
     })
+
+    const {submitState, setSubmitState} = useContext(BtnSubmitContext);
+
     const [errors, setErrors] = useState({
         titulo: false,
         categoria: false,
@@ -97,7 +108,9 @@ const EditForm = () => {
             return;
         }
         const updatedVideo = editFormState;
-        await updateVideo(selectedVideo.id, updatedVideo)
+        await updateVideo(selectedVideo.id, updatedVideo);
+        setSelectedVideo(null);
+        setSubmitState(!submitState);
         console.log('Video Editado: ', updatedVideo);
     }
     const cleanForm = (e) => {
