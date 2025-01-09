@@ -4,6 +4,7 @@ import { deleteVideo } from '../../ConexionApi/conexionApi'
 import { useContext, useEffect } from 'react'
 import { VideosContext } from '../../context/videosContext'
 import ModalZoom from '../ModalZoom'
+import { BtnSubmitContext } from '../../context/btnSubmitContext'
 
 const ButtonSection = styled.section`
     display: flex;
@@ -22,16 +23,18 @@ const LabelIcon = styled.p`
 
 const VideoCard = ({ urlImagen, color, id , video}) => {
     const {selectedVideo, setSelectedVideo} = useContext(VideosContext);
-
+    const {deleteState, setDeleteState} = useContext(BtnSubmitContext);
     const handleDelete = async()=>{
         const sucess = await deleteVideo(id);
         if(sucess){
             alert('Video eliminado correctamente');
+            setDeleteState(!deleteState);
         } else {
             alert('Error al eliminar el video');
         }
     }
 
+    
     return (
         <div className={styles.video__card} 
             style={{

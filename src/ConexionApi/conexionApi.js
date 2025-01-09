@@ -29,6 +29,7 @@ export async function addVideo(video) {
         }
 
         const newVideo = await response.json();
+        alert('Video agregado Exitosamente')
         return newVideo;
     } catch (error) {
         console.error('Error en addVideo:', error);
@@ -45,7 +46,7 @@ export async function deleteVideo(id) {
         if (!response.ok){
             throw new Error('Error al eliminar el video')
         }
-        
+        alert('Video Eliminado Correctamente')
         console.log('Video eliminado');
         return true
 

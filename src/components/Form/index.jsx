@@ -5,7 +5,8 @@ import InputSelect from "../InputSelect";
 import TextArea from "../TextArea";
 import Button from "../Button";
 import { addVideo } from "../../ConexionApi/conexionApi";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { BtnSubmitContext } from "../../context/btnSubmitContext";
 
 const FormTitle = styled.h3`
     color: #fff;
@@ -66,6 +67,8 @@ const Form = () => {
         descripcion: ""
     });
 
+    const {submitState, setSubmitState} = useContext(BtnSubmitContext);
+
     const [errors, setErrors] = useState({
         titulo: false,
         categoria: false,
@@ -118,6 +121,8 @@ const Form = () => {
             url_video: "",
             descripcion: ""
         });
+        setSubmitState(!submitState);
+
     };
 
     const cleanForm = (e) => {
